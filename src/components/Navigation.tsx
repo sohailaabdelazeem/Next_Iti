@@ -18,10 +18,10 @@ const navItems = [
 
 export default async function Navigation() {
   // console.log(session);
-  // const nav=[...navItems]
-  // const session=await auth();
-  // if(session?.user) nav.push({name:'logout',path:'/logout'});
-  // if(!session?.user) nav.push({name:'login',path:'/login'});
+  const nav=[...navItems]
+  const session=await auth();
+  if(session?.user) nav.push({name:'logout',path:'/logout'});
+  if(!session?.user) nav.push({name:'login',path:'/login'});
 
   // const pathname = usePathname();
   // const { cartCount} = useCart();
